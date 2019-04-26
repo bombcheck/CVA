@@ -1,0 +1,63 @@
+.campaign__new--details {
+  width: 100%;
+  float: left;
+}
+
+.html_text--details {
+  float: left;
+  width: 100%;
+}
+
+.ck-editor__editable {
+  height: 300px;
+}
+
+.email {
+  position: relative;
+
+  .box__source{
+    position: absolute;
+    border-left: 1px solid #c4c4c4;
+    top: 31px;
+    right: 0px;
+    height: 40px;
+    z-index: 1;
+
+  }
+  .btn_source-html{
+    background: transparent;
+    border: none;
+    height: 30px;
+    font-size: 15px;
+    margin: 5px;
+    color: #333;
+    font-weight: 600;
+    padding: 0px 15px;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+      background: #dedede;
+    }
+    &.active {
+      background: #dedede;
+    }
+  }
+
+  .email_html-code {
+    position: absolute;
+    background: #fefefe;
+    border: none;
+    top: 71px;
+    left: 1px;
+    width: 775px;
+    z-index: 1;
+    height: 298px;
+    word-wrap: break-word;
+    padding: 5px;
+    overflow-x: auto;
+    font-size: 15px;
+    resize: none;
+  }
+}
+

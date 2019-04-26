@@ -1,0 +1,154 @@
+.menu_item {
+  color: $alphabet;
+  padding-left: 20px;
+  transition: 300ms;
+}
+
+.menu {
+  float: left;
+  height: 100%;
+  margin: 0;
+  border-right: 1px solid $borderMenu;
+  background: $clouds;
+  padding: 10px 0 0 0 !important;
+  width: 20% !important;
+  position: relative;
+
+  .logo {
+    width: 80%;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    cursor: default;
+    position: relative;
+
+    .first__letters{
+      padding: 10px;
+      width: 45px;
+      height: 45px;
+      background: #2548a6;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p{
+        margin: 0;
+      }
+    }
+
+    .user__name{
+      position: absolute;
+      margin: 0px;
+      left: 80px;
+      float: left;
+      width: 100%;
+    }
+
+    .user__client-name {
+      position: absolute;
+      left: 80px;
+      top:30px;
+      width: 100%;
+      font-size: 12px;
+
+    }
+  }
+
+  .user__actions{
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    a{
+      color: $actions-color;
+      cursor: pointer;
+      font-size: 20px !important;
+      &:hover{
+        color: #2548a6;
+      }
+    }
+  }
+
+  .list {
+    width: 100%;
+    background: inherit;
+    padding-top: 50px;
+    padding-bottom: 4px;
+    float: left;
+    margin-top: 15px;
+
+    .list__tile--link {
+      width: 100%;
+      float: left;
+      cursor: pointer;
+      color: $alphabetMenu;
+      border-radius: 3px;
+      padding: 10px 30px;
+      text-decoration: none;
+      position: relative;
+
+      .active__span {
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .list__tile__icon {
+        float: left;
+        display: flex;
+        justify-content: flex-start;
+        min-width: 47px;
+        font-size: 20px;
+
+
+        i {
+          color: $alphabetMenu;
+        }
+      }
+
+      .active__icon  {
+        color: $activeItemMenuColor !important;
+      }
+
+      .list__tile__title {
+        font-size: 15px;
+        float: left;
+        font-weight: 500;
+      }
+
+      &:hover {
+        background: $activeItemMenuHover;
+        color: $alphabetMenu;
+      }
+    }
+
+    .list__tile--link-active {
+
+      .active__span {
+        background: $activeItemMenuColor;
+      }
+
+      color: $activeItemMenuColor;
+
+      i {
+        color: $activeItemMenuColor !important;
+      }
+    }
+  }
+}
+
+.width_zero {
+  width: 0px;
+  display: none;
+}
+
+.active_list {
+  background: rgba(0,0,0,0.12) !important;
+}

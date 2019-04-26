@@ -1,0 +1,194 @@
+//import variables
+@import 'variables';
+@import 'general';
+
+//import components
+@import 'components/mixin';
+@import 'components/leftMenu';
+@import 'components/tables';
+@import 'components/modal';
+@import 'components/inputs';
+
+//import page
+@import 'pages/loading';
+@import 'pages/campaigns/campaigns';
+@import 'pages/campaigns/details';
+@import 'pages/login';
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+* {
+  outline: none !important;
+}
+
+body {
+  background-color: #0c5460;
+  font-family: 'Roboto', Fallback, sans-serif !important;
+}
+
+.app__container {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  //background: $mainBackground;
+  //overflow-x: auto !important;
+}
+
+.container__ {
+  padding-top: 20px;
+  background: #fff;
+  width: 80%;
+  height: 100%;
+}
+
+.menu-content {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px !important;
+  width: 80% !important;
+  overflow-x: auto;
+
+  .menu-content_header {
+    float: left;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    padding-bottom: 10px;
+
+    .title_side {
+      float: left;
+      margin: 0;
+      padding-left: 10px;
+    }
+
+    .add_new-button {
+      float: right;
+      width: auto;
+    }
+  }
+}
+
+
+.user__vehicles-holder {
+  width: 100%;
+  float: left;
+  height: auto;
+  min-height: 150px;
+  min-height: 200px;
+  overflow: auto;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.table__holder {
+  width: 100%;
+  float: left;
+  padding-top: 8px;
+  height: 385px;
+  overflow-y: auto;
+  margin-top: 10px;
+
+  &.auto--overflow-y {
+    overflow-y: auto;
+    height: auto;
+  }
+
+  &.roles--table {
+    box-sizing: border-box;
+    padding-left: 4px;
+  }
+
+  .table__header {
+    float: left;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    label {
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+      font-weight: 500;
+      padding-left: 10px;
+      text-align: left;
+    }
+
+    &.conf--header {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      p {
+        margin: 0;
+        color: $table-head;
+      }
+    }
+  }
+
+  .table__cell {
+    float: left;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;;
+    transition: all .2s $firstBezier;
+    text-align: left;
+
+
+    &:nth-child(even) {
+      background: $table-cell;
+    }
+
+    &.has--grid {
+      display: flex;
+      font-size: 11px;
+      color: $table-cell-font;
+      label {
+        padding: 0;
+        float: left;
+      }
+
+      .grid__input {
+        padding: 0;
+        display: flex;
+        text-align: left;
+        padding-left: 10px;
+
+        .small__label-team {
+          font-size: 14px;
+          margin-top: 0;
+          font-weight: bold;
+          padding-right: 5px;
+          margin-left: 2px;
+        }
+      }
+    }
+
+
+    p {
+      margin: 0;
+      font-size: 12px;
+      color: $table-cell-font;
+    }
+    .click {
+      cursor: pointer;
+    }
+    .action__icons {
+      position: absolute;
+      right: 0;
+
+      a {
+        color: $table-cell-font;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+

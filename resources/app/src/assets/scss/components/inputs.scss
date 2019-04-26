@@ -1,0 +1,169 @@
+// Configuration modal inputs
+.cnf__input {
+  width: 100%;
+  padding: 6px 0 0 0 !important;
+  float: left;
+  background-color: white;
+  position: relative;
+
+  &.flex--display {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    label {
+      width: 60px;
+      padding-right: 7px;
+    }
+
+    .datepicker {
+      float: left;
+      width: 100%;
+    }
+  }
+
+  label {
+    font-size: 12px;
+    font-family: $roboto;
+    font-weight: 400;
+    color: $labelColor;
+    margin-bottom: 3px;
+  }
+
+  .basic__input {
+    width: 100%;
+    font-size: 13px;
+    border-radius: 4px;
+    border-color: #d7d9db #dfe1e3 #eaebec;
+    border-width: 1px;
+    height: 31px;
+    border-style: solid;
+
+    &.textarea--input {
+      resize: none;
+
+      &.small--input {
+        height: 70px;
+      }
+    }
+
+    //&.error {
+    //  border-color: $errorColor;
+    //  transition: border .2s $firstBezier;
+    //}
+  }
+
+  .error__span {
+    float: left;
+    margin-top: 3px;
+    color: $redColor;
+    font-size: 12px;
+    padding-left: 5px;
+  }
+
+  .checkbox__holder {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 4px 0px;
+
+    input {
+      margin: 0;
+    }
+
+    label {
+      cursor: pointer;
+      margin-bottom: 0;
+      display: block;
+      margin-left: 5px;
+      margin-top: 1px;
+      width: 100%;
+      float: left;
+    }
+  }
+}
+
+.cnf__input-html {
+  display: block;
+  width: 100%;
+  float: left;
+  word-wrap: break-word;
+  cursor: default;
+
+
+  label {
+    font-size: 12px;
+    font-family: $roboto;
+    font-weight: 400;
+    color: $labelColor;
+    margin-bottom: 3px;
+  }
+
+  .view-html {
+    display: block;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    float: left;
+    padding: 10px;
+  }
+}
+
+.col-md-6 {
+  padding: 0 3px 0 0!important;
+}
+
+.cnt__textarea{
+  height: 80px !important;
+  float: left;
+  resize: none;
+  font-size: 14px;
+}
+
+.cnt__textarea-233 {
+  @extend .cnt__textarea;
+  height: 233px !important;
+}
+
+.cnt__textarea-188 {
+  @extend .cnt__textarea;
+  height: 188px !important;
+}
+
+.cnt__textarea-174 {
+  @extend .cnt__textarea;
+  height: 174px !important;
+}
+
+.cnt__textarea-lg {
+  @extend .cnt__textarea;
+  min-height: 300px !important;
+  word-wrap: break-word;
+  height: auto !important;
+}
+
+.vue-treeselect__control {
+  border-color: #ccc !important;
+  height: 34px !important;
+  font-size: 14px;
+  color: $alphabetContent;
+}
+
+.vue-treeselect__single-value {
+  color: #555 !important;
+}
+
+.vue-treeselect__input{
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #ccc !important;
+  box-shadow: none !important;
+}
+
+.form-control {
+  box-shadow: none !important;
+  font-size: 14px !important;
+}
+

@@ -1,0 +1,32 @@
+.noPadding {
+  padding: 0 !important;
+}
+
+.noMargin {
+  margin: 0 !important;
+}
+
+.horizontal__line{
+  background-color: $borderMenu;
+  height: 1px;
+  float: left;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
+.form-line {
+  float: left;
+  width: 100%;
+}
+
+::placeholder {
+  color: $placeholder !important;
+}
+
+.sweetalert-sm {
+  font-size: 10px !important;
+}
+
+.cursorDedault {
+  cursor: default !important;
+}

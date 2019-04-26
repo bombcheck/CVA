@@ -1,0 +1,80 @@
+.login__form{
+  position: absolute;
+  top: 200px;
+  float: left;
+  width: 400px;
+  margin-left: calc(50% - 200px);
+  margin-right: calc(50% - 200px);
+  background-color: white;
+
+  .login--form{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    float: left;
+    height: 370px;
+
+    .login_icon{
+      float: left;
+      width: 100%;
+      margin-bottom: 80px;
+      text-align: center;
+      color: $clouds;
+
+      .login--icon{
+        float: left;
+        height: 35px;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .__icon{
+          font-size: 35px !important;
+        }
+      }
+
+      .product_name {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+    }
+
+    .login_input{
+      width: 100%;
+      float: left;
+      height: 80px;
+
+      input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px white inset;
+      }
+
+      .login_input-value{
+        float: left;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid gray;
+        padding-left: 5px;
+      }
+      .error__input{
+        float: left;
+        font-size: 13px;
+        color: $redColor;
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+.btn_login{
+  float: right;
+  margin-top: 15px;
+
+  .login_btn{
+    width: 100%;
+    //background-color: $clouds;
+    color: white;
+    padding: 7px;
+    border: 0;
+  }
+}

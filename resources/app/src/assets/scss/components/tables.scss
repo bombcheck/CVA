@@ -1,0 +1,195 @@
+.table__main {
+  float: left;
+  background: white;
+  padding: 0 10px;
+  margin:50px 0;
+  width: 100%;
+
+  .table__row {
+    float: left;
+    width: 100%;
+    cursor: default;
+    min-height: 40px;
+    border-radius: 4px;
+    box-shadow: $secondShadow;
+    margin-bottom: 5px;
+    padding: 0 0 0 5px;
+
+    .table__th--data {
+      width: calc(100% - 20px - 200px - 300px);
+      float: left;
+      font-size: 14px;
+      height: 100%;
+
+      .table__th {
+        display: inline;
+        height: 100%;
+        float: left;
+        word-wrap: break-word;
+        padding: 8px 0 8px 3px;
+      }
+
+      .table__td {
+        display: inline;
+        height: 100%;
+        float: left;
+        padding: 7px 0 7px 5px;
+        word-wrap: break-word;
+        cursor: pointer;
+        color: $actions-color;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .table_td--click {
+        cursor: default;
+      }
+    }
+
+    .table__tags {
+      width: 300px;
+      float: left;
+      text-align: left;
+      padding: 8px 0;
+
+      .tag {
+        padding: 4px 12px;
+        font-size: 14px;
+        border-radius: 20px;
+        background-color: $clouds;
+        border: 1px solid $lightGrey;
+        font-weight: 500;
+      }
+    }
+
+    .table__button {
+      width: 200px;
+      float: left;
+      padding-right: 10px;
+      text-align: right;
+
+      .btn__ {
+        font-size: 12px !important;
+        font-weight: 900;
+        margin: 3px 0;
+      }
+      .btn__asset {
+        width: 45px !important;
+      }
+
+      .btn__row {
+        font-size: 12px !important;
+        border: 1px solid $lightGrey;
+        background-color: $clouds;
+        font-weight: 900;
+        margin: 3px 0;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .table__td--action {
+      width: 20px;
+      float: left;
+      display: inline;
+      cursor: pointer;
+
+      .icon__dropdown {
+        padding: 8px;
+      }
+    }
+  }
+
+  //.table__header {
+  //  float: left;
+  //  width: 100%;
+  //  cursor: default;
+  //  height: 40px;
+  //  //box-shadow: none ;
+  //  border-radius: 4px 4px 0 0;
+  //  border: 1px solid $lightGrey;
+  //  margin: 0 !important;
+  //  padding: 0 0 0 5px;
+  //}
+}
+
+.table_with-out--tags {
+  .table__th--data {
+    width: calc(100% - 20px - 200px) !important;
+  }
+}
+
+.table_2td {
+  @extend .table__main;
+
+  .table__row {
+    .table__th--data {
+      width: calc(40% - 10px - 100px);
+    }
+
+    .table__button {
+      width: calc(200px + 20%);
+    }
+  }
+}
+
+.table_3td {
+  @extend .table__main;
+
+  .table__row {
+    .table__th--data {
+      width: calc(33.33% - 6.66px);
+    }
+  }
+}
+
+.table_4td {
+  @extend .table__main;
+
+  .table__row {
+    .table__th--data {
+      width: calc(33.3% - 40px);
+    }
+    .table__button {
+      width: 120px;
+    }
+  }
+}
+
+.tr_click {
+  cursor: pointer;
+}
+
+.dropdown-menu-main {
+  margin-top: -10px !important;
+  padding: 3px 0 !important;
+
+  .dropdown__item {
+    height: 30px;
+    padding: 4px 0 4px 5px;
+    float: left;
+    font-size: 14px;
+    width: 100%;
+
+    &:hover {
+      background: $hoverItemSubMenu;
+      cursor: pointer;
+    }
+
+    .dropdown__item--icon {
+      width: 15%;
+      padding-left: 3%;
+      float: left;
+    }
+
+    .dropdown__item--description {
+      padding-left: 5px;
+      width: 85%;
+      float: left;
+      font-size: 15px;
+    }
+  }
+}

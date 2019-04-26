@@ -1,0 +1,62 @@
+// Fonts
+$roboto: 'Roboto', sans-serif;
+
+
+// Main COLORS
+$header: #2548a6;
+$menu: #ffffff;
+
+
+// Text
+$alphabet: #f3f7fc;
+$alphabetMenu: rgba(0,0,0,.54);
+$alphabetContent: rgba(0,0,0,.64);
+$alphabetInput: rgb(73, 80, 87);
+
+
+// Link ------
+$actions-color: #162B4D;
+$activeItemMenuColor: #2548a6;
+$activeItemMenuHover: #e3e5e6;
+
+// Border
+$borderMenu: rgba(0,0,0,.12);
+$borderInput: rgba(0,0,0,.60);
+$borderButton: rgba(0,0,0,.60);
+
+// Hover
+$hoverRowLink: rgba(0,0,0,.07);
+$hoverItemSubMenu: rgba(0,0,0,.04);
+
+
+// Colors
+$mainTextColor: #777;
+$mainGrey: #d9d9d9;
+$secGrey: #ecf0f1;
+$thirdGrey: #d4d8d8;
+$lightGrey: #f1f2f6;
+$clouds: #ecf0f1;
+$secCloud: #ececec;
+$labelColor: #69747d;
+$placeholder: #bdbdbd;
+
+//Success case colors
+$greenColor:#5cb85c;
+$greenAlphaColor: #90d09c;
+
+//Error case colors
+$redColor: #d9534f;
+$redAlphaColor: #de9492;
+
+// BEZIERS
+$firstBezier:  cubic-bezier(.4,1,1,1);
+$secondBezier: cubic-bezier(0,.98,.53,.95);
+
+// SHADOWS
+$firstShadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$secondShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+// TABLE COLORS
+$table-head: #646466;
+$table-cell: #f5f6f8;
+$table-cell-font: #9e9e9e;
