@@ -12,7 +12,7 @@ Backend part:
 
 Frontend part:
 
-    1. cd resourcs/app
+    1. cd resources/app
     
     2. npm install
     
