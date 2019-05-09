@@ -1,5 +1,7 @@
 How to init project ...
 
+We need a mySQL-DB for that: Create one on your server. Then modify `.env.example`: Copy to `.env` and insert mysql credentials.
+
 Backend part:
 
     1. composer update
@@ -8,7 +10,9 @@ Backend part:
     
     3. php artisan passport:install
     
-    4. php artisan serve (test in localhost)
+    4. php artisan key:generate
+    
+    5. php artisan serve (test in localhost)
 
 Frontend part:
 
